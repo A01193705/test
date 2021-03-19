@@ -73,7 +73,7 @@ A) Define un objeto tipo "Perro" que reciba 3 parametros
 1) Nombre
 2) Color
 3) Raza
-
+*/
 class Perro
   {
     constructor (Nombre, Color, Raza)
@@ -88,17 +88,18 @@ class Perro
       console.log("Nombre: " + this.Nombre + " , De color: " + this.Color + " , Raza: " + this.Raza);
     }
   }
-
+/*
 B) Crea 3 objectos  con diferentes valores
-
+*/
 var Perro1 = new Perro ("Halo", "Blanco", "Spitz Japones");
 var Perro2 = new Perro ("Carly", "Blanca", "French Poodle");
 var Perro3 = new Perro ("Chayanne", "Gris/Cafe/Blanco", "Pomeramio/Shitsu");
 
+    /*
 C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. Lo puedes hacer en una sola línea o en 3 lineas aparte. 
-
+*/
 console.log(Perro1.Nombre + " " + Perro2.Color + " " + Perro3.Raza);
-
+/*
 *****BONUS****
 
 Crea una método en la definición del objeto "Perro" llamado printInfo()  que escriba en consola todas las propiedades del objeto que lo invoca. 
@@ -110,13 +111,6 @@ fido.printInfo();
 Deberia escribir en consola
 
 "Nombre: Fido , De color: Cafe , Raza: Poodle"
-
-Perro1.printInfo();
-Perro2.printInfo();
-Perro3.printInfo();
-
-
-
 */
 
 
@@ -149,7 +143,9 @@ console.log("");
  *        PRUEBA TUS OBJETOS
  * 
  ***/
-
+Perro1.printInfo();
+Perro2.printInfo();
+Perro3.printInfo();
 
 
 </script>
