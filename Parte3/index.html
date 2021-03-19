@@ -17,6 +17,14 @@ let nombres  = ['Jorge','Isabel','Juan','Pedro','Karina','Jose','Arturo','Rogeli
 
 // CREA TU FUNCION mayusculas aqui:
 
+function mayusculas (nombres)
+{
+  for (var i = 0; i < nombres.length; i++)
+    {
+      console.log(nombres[i].toUpperCase());
+    }
+}
+
 
 
 /*
@@ -25,12 +33,33 @@ let nombres  = ['Jorge','Isabel','Juan','Pedro','Karina','Jose','Arturo','Rogeli
 
 // CREA TU FUNCION numVocales aqui:
 
+function numVocales (nombres)
+{
+  var vowelList = 'aeiouAEIOU';
+  var vowelCount = 0;
+    for (var j = 0; j < nombres.length; j++)
+      {
+        if (vowelList.indexOf(nombres[j]) !== -1)
+          {
+            vowelCount++;
+          }
+      }
+       console.log(nombres + ": tiene " + vowelCount + " vocales.")
+}
 
 /*
 ### F3 Crea una funcion llamada numVocalesArr que reciba un arreglo y mande llamar a la funcion numVocales para que escriba la longitud de cada elemento del arreglo." 
 */
 
 // CREA TU FUNCION numVocalesArr aqui:
+
+function numVocalesArr (nombres)
+{
+  for (var i = 0; i < nombres.length; i++)
+    {
+      numVocales(nombres[i]);
+    }
+}
 
 
 
@@ -45,11 +74,30 @@ A) Define un objeto tipo "Perro" que reciba 3 parametros
 2) Color
 3) Raza
 
+class Perro
+  {
+    constructor (Nombre, Color, Raza)
+    {
+      this.Nombre = Nombre;
+      this.Color = Color;
+      this.Raza = Raza;
+    }
+    
+    printInfo()
+    {
+      console.log("Nombre: " + this.Nombre + " , De color: " + this.Color + " , Raza: " + this.Raza);
+    }
+  }
 
 B) Crea 3 objectos  con diferentes valores
 
+var Perro1 = new Perro ("Halo", "Blanco", "Spitz Japones");
+var Perro2 = new Perro ("Carly", "Blanca", "French Poodle");
+var Perro3 = new Perro ("Chayanne", "Gris/Cafe/Blanco", "Pomeramio/Shitsu");
+
 C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. Lo puedes hacer en una sola línea o en 3 lineas aparte. 
 
+console.log(Perro1.Nombre + " " + Perro2.Color + " " + Perro3.Raza);
 
 *****BONUS****
 
@@ -76,13 +124,19 @@ Deberia escribir en consola
 
 // F1
 
+mayusculas (nombres);
+console.log("");
 
 // F2
 
+numVocales (nombres[0]);
+numVocales (nombres[1]);
+console.log("");
 
 // F3
 
-
+numVocalesArr (nombres);
+console.log("");
 
 
 /***
@@ -90,6 +144,10 @@ Deberia escribir en consola
  *        PRUEBA TUS OBJETOS
  * 
  ***/
+
+Perro1.printInfo();
+Perro2.printInfo();
+Perro3.printInfo();
 
 
 </script>

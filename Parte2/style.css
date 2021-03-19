@@ -1,61 +1,142 @@
 header {
-
-
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  
 }
 
 
 h2 {
-
+  display:flex;
+  border:solid;
+  width: 32%;
+  justify-content:space-evenly;
+  border-width:1px;
+  margin:1px;
 }
 
 .nav {
-
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
 
   }
 
   li {
-
-
+    display:flex;
+      flex-direction:row;
+      justify-content:center;
+      border:solid;
+    border-width:1px;
+       margin: 10px;
+    width: 17%;
   }
 
   .content{
+    display:flex;
+      border:solid;
 
 }
 
   .aside {
-
+    display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
   }
 
   .slidebox{
-
+border:solid;
+      border-width:1px;
+      width:300px;
+        text-align: center;
    
   }
 
   .article{
-
+    border:solid;
+      border-width:1px;
+    display:flex;
+      flex-direction:column;
   }
 
 
 .poem{
+  border:solid;
+      border-width:1px;
+}
 
+.ul {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
 }
 
 
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 600px to 990px*/
   @media (min-width:600px) and (max-width: 990px)  {
+    ul {
+      display:flex;
+      flex-direction:row;
+      justify-content:space-evenly;
+      flex-wrap: wrap;
+    }
+     li {
+       
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      border:solid;
+    border-width:1px;
+       padding-left: 30px;
+       padding-right:30px;
+       margin: 10px;
+       
+  }
+    
     .article {
-
+      border:solid;
+      border-width:1px;
+    display:flex;
+      flex-direction:column;
   } 
+    
+    .poem {
+      border:solid;
+      border-width:1px;
+    }
 header{
-
+  display:none;
 }
+
+      .aside {
+    display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        
+  }
+    .content {
+      display:flex;
+      border:solid;
+    }
+    
+    .slidebox {
+      
+      border:solid;
+      border-width:1px;
+      width:300px;
+        text-align: center;
+    }
 }
 
 /*  Small devices    */
 @media (max-width:599px) {
 
 header,.content{
+display:none;
 
 }
 
@@ -66,11 +147,16 @@ header,.content{
 
 
 .nav > li {
-
+    list-style-type:none;
+    text-align:center;
+    border:solid;
+    border-width:1px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    margin-right:40px;
 }
 
 
 }
-
-
   
